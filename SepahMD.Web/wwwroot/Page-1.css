@@ -1,0 +1,272 @@
+ .u-section-1 {
+  min-height: 484px;
+}
+
+.u-section-1 .u-layout-wrap-1 {
+  margin: 11px 0 60px;
+}
+
+.u-section-1 .u-layout-cell-1 {
+  min-height: 419px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 21px 39px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: -2px auto 0 28px;
+}
+
+.u-section-1 .u-list-1 {
+  width: 206px;
+  margin: 9px auto 0;
+}
+
+.u-section-1 .u-repeater-1 {
+  grid-gap: 10px 10px;
+  grid-template-columns: 100%;
+  min-height: 47px;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 10px 10px 9px;
+}
+
+.u-section-1 .u-text-2 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.u-section-1 .u-layout-cell-2 {
+  min-height: 419px;
+}
+
+.u-section-1 .u-container-layout-3 {
+  padding: 0;
+}
+
+.u-section-1 .u-list-2 {
+  width: 829px;
+  margin: 69px auto 0;
+}
+
+.u-section-1 .u-repeater-2 {
+  grid-gap: 10px 10px;
+  grid-template-columns: 100%;
+  min-height: 203px;
+}
+
+.u-section-1 .u-container-layout-4 {
+  padding: 0;
+}
+
+.u-section-1 .u-image-1 {
+  width: 139px;
+  height: 119px;
+  object-position: 50% 17%;
+  margin: 13px auto 0 9px;
+}
+
+.u-section-1 .u-text-3 {
+  font-family: Vazir-Bold;
+  margin: -116px auto 0;
+}
+
+.u-section-1 .u-text-4 {
+  font-family: Vazir-Black;
+  margin: 9px auto 0;
+}
+
+.u-section-1 .u-text-5 {
+  font-family: Vazir-Light;
+  margin: 16px 42px 0;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  border-style: none;
+  font-family: Vazir-Medium;
+  margin: 42px auto 0 27px;
+  padding: 0 4px;
+}
+
+.u-section-1 .u-line-1 {
+  width: 775px;
+  height: 3px;
+  transform-origin: left center 0px;
+  margin: 29px auto -1px;
+}
+
+@media (max-width: 1199px) {
+   .u-section-1 {
+    min-height: 592px;
+  }
+
+  .u-section-1 .u-layout-wrap-1 {
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 460px;
+  }
+
+  .u-section-1 .u-list-1 {
+    width: 136px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 460px;
+  }
+
+  .u-section-1 .u-list-2 {
+    width: 719px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-top: 20px;
+    margin-left: 9px;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-left: 9px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-line-1 {
+    width: 719px;
+  }
+}
+
+@media (max-width: 991px) {
+   .u-section-1 {
+    min-height: 232px;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .u-section-1 .u-list-1 {
+    width: 103px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-list-2 {
+    width: 551px;
+  }
+
+  .u-section-1 .u-line-1 {
+    width: 551px;
+  }
+}
+
+@media (max-width: 767px) {
+   .u-section-1 {
+    min-height: 332px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-list-2 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-line-1 {
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+   .u-section-1 {
+    min-height: 703px;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 170px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  .u-section-1 .u-list-1 {
+    margin-top: 7px;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: auto;
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 465px;
+  }
+
+  .u-section-1 .u-list-2 {
+    width: 414px;
+  }
+
+  .u-section-1 .u-text-3 {
+    width: auto;
+    margin-top: 16px;
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+
+  .u-section-1 .u-text-4 {
+    width: auto;
+    margin-top: 0;
+    margin-left: 55px;
+  }
+
+  .u-section-1 .u-text-5 {
+    margin-top: 29px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 0;
+    margin-right: 270px;
+  }
+
+  .u-section-1 .u-line-1 {
+    width: 340px;
+  }
+}@font-face {
+  font-family: 'Vazir-Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Vazir-Bold.ttf);
+}@font-face {
+  font-family: 'Vazir-Black';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Vazir-Black.woff2);
+}@font-face {
+  font-family: 'Vazir-Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Vazir-Light.woff2);
+}@font-face {
+  font-family: 'Vazir-Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Vazir-Medium.woff);
+}

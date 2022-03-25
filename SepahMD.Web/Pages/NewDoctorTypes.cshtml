@@ -1,0 +1,27 @@
+﻿@page
+@model SepahMD.Web.Pages.NewDoctorTypeModel
+@{
+
+    <section class="u-align-center u-clearfix u-section-1" id="sec-8b00">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">تعریف نوع دکتر/مرکز درمانی جدید</h2>
+        <div class="u-align-center u-form u-form-1">
+          <form  method="post" class="u-clearfix u-form-spacing-5 u-form-vertical u-inner-form" style="padding: 10px;"  name="form" >
+            <div class="u-form-group u-form-name ">
+              <label for="name-3b9a" class="u-custom-font u-label u-label-1"> نام نوع دکتر یا مرکز درمانی</label>
+              <input dir="rtl" type="text" placeholder="نوع دکتر یا مرکز درمانی" id="name" name="name" class="u-border-1 u-border-palette-1-base u-custom-font u-input u-input-rectangle u-white u-input-1" asp-for="newdoctortype.DoctorTypeName" >
+            </div>
+            <input type="submit" class="btn btn-primary" value="ادامه" onclick="clicked()">
+          </form>
+        </div>
+      </div>
+    </section>
+    <script>
+        function clicked()
+        {
+            var x= document.getElementById("name").value;
+            alert(x);
+        }
+    </script>
+
+}
