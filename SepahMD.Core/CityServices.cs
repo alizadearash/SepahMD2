@@ -19,10 +19,11 @@ namespace SepahMD.Core
             database = _db;
         }
 
-        public int NewCity(CityViewModel _CityViewModel)
+        public int AddNewCity(CityViewModel _CityViewModel)
         {
             City city = new City();
             city.CityName = _CityViewModel.CityName;
+            
             city.ProvinceName = _CityViewModel.ProvinceName;
             city.Precode = _CityViewModel.Precode;
             database.tblCity.Add(city);

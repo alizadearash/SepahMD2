@@ -14,7 +14,7 @@ namespace SepahMD.DataLayer.Entities
         public string ProvinceName { get; set; }
         public string CityName { get; set; }
         public string Precode { get; set; }
-        
 
+        
     }
 }

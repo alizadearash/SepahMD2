@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SepahMD.DataLayer.Context;
 
@@ -10,9 +11,10 @@ using SepahMD.DataLayer.Context;
 namespace SepahMD.DataLayer.Migrations
 {
     [DbContext(typeof(Refahi_db))]
-    partial class Refahi_dbModelSnapshot : ModelSnapshot
+    [Migration("20220325153608_hg")]
+    partial class hg
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

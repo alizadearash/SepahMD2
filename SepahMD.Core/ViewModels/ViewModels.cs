@@ -50,5 +50,10 @@ namespace SepahMD.Core.ViewModels
         [Display(Name ="نوع مرکز درمانی ")][Required(ErrorMessage ="لطفا مقدار {0} را وارد نمائید")]
         public string DoctorTypeName { get; set; }
     }
-
+    public class EditDoctorTypeViewModel
+    {
+        [Display(Name = "نوع مرکز درمانی ")]
+        [Required(ErrorMessage = "لطفا مقدار {0} را وارد نمائید")]
+        public string DoctorTypeName { get; set; }
+    }
 }

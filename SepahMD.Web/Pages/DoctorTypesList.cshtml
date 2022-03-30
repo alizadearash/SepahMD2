@@ -1,0 +1,37 @@
+﻿@page
+@model SepahMD.Web.Pages.DoctorTypesListModel
+@{
+}
+<div class="row">
+    <div class="col-9"><h1>لیست انواع مراکز درمانی در پنل ادمین </h1></div>
+    <div class="col-3"><a class="btn btn-success" href="newdoctortypes">ثبت نوع مرکز درمانی جدید</a></div>
+    
+</div>
+<div class="row">
+    <table class="table u-container-layout-1 table-striped table-hover">
+        <thead>
+            <tr>
+                <th>کد نوع مرکز درمانی </th>
+                <th>نام نوع مرکز درمانی </th>
+              
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+           @foreach(var item in Model.showAllDoctorTypes)
+            {
+                <tr>
+                    <td>@item.DoctorTypeID</td>
+                    <td>@item.DoctorTypeName</td>
+                    <td>
+                     @*<a class="btn btn-warning" asp-page="EditDoctorType" asp-route-id="@item.DoctorTypeID"> ویرایش </a>*@
+                        <a class="btn btn-warning" href="/EditDoctorType/@item.DoctorTypeID"> ویرایش </a>
+
+                        <a href="#" class="btn btn-danger">حذف</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>

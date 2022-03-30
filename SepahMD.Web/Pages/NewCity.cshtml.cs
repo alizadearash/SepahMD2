@@ -16,7 +16,11 @@ namespace SepahMD.Web.Pages
         public CityViewModel newcity { get; set; }  
         public IActionResult OnPost()
         {
-            city.NewCity(newcity);
+            if (!ModelState.IsValid)
+            {
+                Console.WriteLine("Error In Sending Data!!!!");
+            }
+            city.AddNewCity(newcity);
             return Page();
         }
         public void OnGet()

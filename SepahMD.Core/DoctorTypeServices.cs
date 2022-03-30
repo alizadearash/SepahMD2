@@ -17,6 +17,18 @@ namespace SepahMD.Core
         {
             database = _db;
         }
+        public DoctorType GetDoctorTypeByID(int id)
+        {
+            return database.tblDoctorType.FirstOrDefault(findID=>findID.DoctorTypeID==id);
+        }
+
+        public EditDoctorTypeViewModel EditDoctorTypeWithID(int id)
+        {
+            var display=GetDoctorTypeByID(id);
+            EditDoctorTypeViewModel _viewModel = new EditDoctorTypeViewModel();
+            _viewModel.DoctorTypeName=display.DoctorTypeName;
+           return _viewModel;
+        }
 
         public int NewDoctorType(DoctorTypeViewModel _DoctorTypeViewModel)
         {

@@ -9,6 +9,6 @@ namespace SepahMD.Core.Services
 {
     public interface ICity
     {
-        int NewCity(CityViewModel _CityViewModel);
+        int AddNewCity(CityViewModel _CityViewModel);
     }
 }

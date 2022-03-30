@@ -11,7 +11,6 @@ namespace SepahMD.DataLayer.Entities
     public class DoctorType
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int DoctorTypeID { get; set; }
         public string DoctorTypeName { get; set; }
 

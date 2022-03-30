@@ -19,6 +19,10 @@ namespace SepahMD.Web.Pages
         public DoctorTypeViewModel newdoctortype { get; set; }
         public IActionResult OnPost()
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
             doctorType.NewDoctorType(newdoctortype);
             return Page();
         }
