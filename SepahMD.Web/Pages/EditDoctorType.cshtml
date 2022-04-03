@@ -1,10 +1,11 @@
-﻿@page "{id}"
+﻿@page 
 @model SepahMD.Web.Pages.EditDoctorTypeModel
 @{
 }
 <section class="u-align-center u-clearfix u-section-1" >
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-default u-text-1">  ویرایش نوع دکتر/مرکز درمانی </h2>
+        <input type="hidden" value="@ViewData["id"]"/>
         <div class="u-align-center u-form u-form-1">
           <form  method="post" class="u-clearfix u-form-spacing-5 u-form-vertical u-inner-form" style="padding: 10px;"  name="form" >
             <div class="u-form-group u-form-name ">

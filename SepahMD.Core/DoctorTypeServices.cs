@@ -29,7 +29,7 @@ namespace SepahMD.Core
             _viewModel.DoctorTypeName=display.DoctorTypeName;
            return _viewModel;
         }
-
+        
         public int NewDoctorType(DoctorTypeViewModel _DoctorTypeViewModel)
         {
             DoctorType doctorType = new DoctorType();
@@ -38,6 +38,14 @@ namespace SepahMD.Core
             database.SaveChanges();
             return doctorType.DoctorTypeID;
             
+        }
+
+        public void UpdateDoctorTypeByID(int id, EditDoctorTypeViewModel editDoctorType)
+        {
+            var update = GetDoctorTypeByID(id);
+            update.DoctorTypeName=editDoctorType.DoctorTypeName;
+            database.Update(update);
+            database.SaveChanges();
         }
     }
 }

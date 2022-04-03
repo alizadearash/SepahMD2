@@ -1,0 +1,46 @@
+﻿@page
+@model SepahMD.Web.Pages.DoctorsHomeModel
+@{
+}
+<!-- Servcies section -->
+    <section class="services-section-two" >
+        <div class="shape-one"><img src="assets/images/shape/shape-1.png" alt=""></div>
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <div class="sec-logo"><img src="assets/images/resource/logo-icon.png" alt=""></div>
+                <div class="sub-title">مراکز درمانی طرف قرارداد</div>
+                <h2>بانک سپه آذربایجان غربی</h2>
+            </div>
+            <div class="row">
+            @foreach(var item in Model.showAllDoctorTypes)
+            {
+                 <div class="col-lg-3 col-md-6 service-block">
+                    <div class="inner-box wow animated fadeInUp" data-wow-delay="0.1s" data-wow-duration="1500ms">
+                        <div class="shape">
+                            <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="162px" height="162px">
+                           <path fill-rule="evenodd"  fill="rgb(233, 245, 250)"
+                            d="M51.907,4.025 C4.744,-12.017 -4.034,30.812 3.061,42.932 C13.643,61.007 32.866,50.344 47.072,67.720 C53.996,76.190 53.497,84.812 59.956,103.148 C63.142,112.195 72.317,125.968 88.600,128.832 C107.082,132.083 115.911,127.220 127.941,135.094 C142.748,144.787 134.937,160.333 142.655,161.040 C148.709,161.596 161.984,153.268 161.302,139.151 C161.105,135.085 165.023,118.834 139.180,100.625 C129.617,93.888 111.663,92.827 102.735,85.214 C86.062,70.995 86.544,57.694 80.574,41.376 C73.423,21.829 69.404,9.976 51.907,4.025 Z"/>
+                           </svg>
+                        </div>
+                        <div class="image">
+                            
+                            <img src="@item.DoctorTypeIcon" />
+                           
+                        </div>
+                        <a href="hospital-details.html">
+                        <h4>@item.DoctorTypeName</h4>
+                        </a>
+                        <div class="link-icon"> <a href="/docdetails" class="link"><i class="icon-arrow-left"></i></a>
+                        </div>
+                    </div>
+                </div>  
+            }
+           
+            </div>
+        </div>
+    </section>
+
+

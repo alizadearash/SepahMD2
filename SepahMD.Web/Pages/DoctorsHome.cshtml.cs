@@ -1,30 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
 using SepahMD.Core.Services;
 using SepahMD.DataLayer.Context;
 using SepahMD.DataLayer.Entities;
 
 namespace SepahMD.Web.Pages
 {
-    public class DocDetailsModel : PageModel
+    public class DoctorsHomeModel : PageModel
     {
-        IDoctor idoctor;
+        IDoctorType doctorType;
         Refahi_db database;
-        public DocDetailsModel(IDoctor _idoctor,Refahi_db _db)
+        public DoctorsHomeModel(IDoctorType _doctorType, Refahi_db _db)
         {
-            idoctor = _idoctor;
+            doctorType = _doctorType;   
             database = _db;
-
         }
         [BindProperty]
-        public IEnumerable<Doctors> ShowSelectedDoctors { get; set; }
+        public IEnumerable<DoctorType> showAllDoctorTypes { get; set; }
         public void OnGet()
         {
-            ShowSelectedDoctors = database.tblDoctors;
+            showAllDoctorTypes = database.tblDoctorType;
         }
-       
-       
-
     }
 }

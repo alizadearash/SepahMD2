@@ -56,4 +56,5 @@ namespace SepahMD.Core.ViewModels
         [Required(ErrorMessage = "لطفا مقدار {0} را وارد نمائید")]
         public string DoctorTypeName { get; set; }
     }
+    
 }

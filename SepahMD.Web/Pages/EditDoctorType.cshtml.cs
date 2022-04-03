@@ -16,7 +16,17 @@ namespace SepahMD.Web.Pages
         public EditDoctorTypeViewModel editDoctorType { get; set; }
         public void OnGet(int id)
         {
+            ViewData["id"]=id;
             editDoctorType = idoctorType.EditDoctorTypeWithID(id);
+        }
+        public IActionResult OnPost(int id)
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+            idoctorType.UpdateDoctorTypeByID(id,editDoctorType);
+            return Redirect("/Index");
         }
     }
 }

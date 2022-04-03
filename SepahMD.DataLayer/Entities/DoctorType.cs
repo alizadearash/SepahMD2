@@ -14,6 +14,6 @@ namespace SepahMD.DataLayer.Entities
         public int DoctorTypeID { get; set; }
         public string DoctorTypeName { get; set; }
 
-      
+      public string DoctorTypeIcon { get; set; }
     }
 }

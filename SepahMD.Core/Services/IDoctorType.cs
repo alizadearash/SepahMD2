@@ -11,5 +11,6 @@ namespace SepahMD.Core.Services
     {
         int NewDoctorType(DoctorTypeViewModel _DoctorTypeViewModel);
         EditDoctorTypeViewModel EditDoctorTypeWithID(int id);
+        void UpdateDoctorTypeByID(int id, EditDoctorTypeViewModel editDoctorType);
     }
 }
